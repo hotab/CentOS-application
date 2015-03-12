@@ -13,10 +13,10 @@ In short: We will use sh commands to do the actual hardening, and we will use py
 Thus, I can see this structure of a recipe:
 
 + Metafile - here we will store the recipe info (like, which files does it use to do what, name, author, version and so on), and more importantly - the recipes it depends upon (more on that later)
-+ Main script - the actual script that will take commands in some form (for example: ```secctl firewall open port 42\tcp```)
++ Main script - the actual script that will take commands in some form (for example: ```firewall open port 42\tcp```)
 + Include script - the script, which can be used by other recipes. This will be needed, for example, to allow mysql recipes to open/close ports.
 + Folder with sh scripts this recipe will use (for example - firewall commands will need to determine which firewall is installed first - firewalld or iptables, and then run commands)
-+ Also, both main and include scripts will need to allow a command to audit everything. For example, ```secctl firewall audit port 42\tcp```
++ Also, both main and include scripts will need to allow a command to audit everything. For example, ```firewall audit port 42\tcp```
 
 _Note_: Roles are just recipes which only use and control other recipes. For example, mysql_role recipe can include firewall and mysql recipes
 
