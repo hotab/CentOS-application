@@ -20,15 +20,21 @@ Thus, I can see this structure of a recipe:
 
 _Note_: Roles are just recipes which only use and control other recipes. For example, mysql_role recipe can include firewall and mysql recipes
 
-The core functionality would be - getting the repo info, getting/creating scripts, checking whether the software is present and active, and so on - all the periferal things.
-
+Core script (let's name it ```secctl```, but that is subject to change) would be able to:
++ Run recipes (```secctl firewall open port 42\tcp```)
++ Get repo info (installed packages)
++ Fetch available scripts
++ Create scripts
++ Check software presence and activity
++ and so on.
++ 
 As we will use python for the main tool too - we can use yum's code for the repo of recipes, and we can integrate with it to look up software (will need to be changed when it is ported to non-rpm based distros, which is rather possible with all the other tooling that was selected, but that won't be hard to do).
 
 I propose this schedule:
 # Schedule
 
 + Week 1 - Think through most of the functions the core module will need, think through all the metafile format and propose a set of common commands for scripts, propose a common format for the include script for ease of usage. (This will require a lot of communication with community, and thus I give a week for it, and it might continue throughout all summer, and even after that (I am thinking about supporting this project after GSoC as well). But 80% will be done in the beginning).
-+ Week 1 - 5. Code the functions for the core - repo communication, recipe creation, read software from yum, and so on. Examine yum's code to see whether there are parts to take from it. It is good and well-tested code, and that will simplify repo management as well - it can be a modification of some tool which is now in use (modifying it is also included in this period). If that is not possible or is too hard - create this tool and create the repo format.
++ Week 1 - 5. Code the functions for the core scrip - repo communication, recipe creation, read software from yum, and so on. Examine yum's code to see whether there are parts to take from it. It is good and well-tested code, and that will simplify repo management as well - it can be a modification of some tool which is now in use (modifying it is also included in this period). If that is not possible or is too hard - create this tool and create the repo format.
 + Week 6 - 9 - Write some recipes, and ajust the core functions to match the actual needs of the recipes.
 + Week 10 - 12 - Test everything through - create tests, verify them, and so on.
 
