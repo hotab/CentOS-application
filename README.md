@@ -5,7 +5,7 @@
 
 After analything how is it done now, I came to a conclusion that this should me a modular tool, wich will use python and sh scripts. I think so, because:
 
-+ sh scripts, that are to be used here, are rather simple (say, opening a port for connections, closing it, locking root user login to mysql, and so on), up to being one-liners, thus it is easier to implement them directly, so that it is familiar for those, who will implement the best practices, and can be easily read by those only using it, in case they do, and creating a good macros language for that would not simplify it further.
++ sh scripts, that are to be used here, are rather simple (say, opening a port for connections, closing it, locking root user login to mysql, and so on), up to being one-liners, thus it is easier to implement them directly, so that it is familiar for those, who will implement the best practices, and can be easily read by those only using it, in case they do.
 + python is installed by default in CentOS, and thus, is available on every machine. It is slow, but for a one-off task like hardening security - it is perfect. It will give us ability to implement platform-independed tools to determine installed software, execute recipes, and so on - most of the work will be done here.
 
 In short: We will use sh commands to do the actual hardening, and we will use python scripts to execute needed commands. 
@@ -51,7 +51,7 @@ If anything is finished faster than in schedule - these features can get impleme
 
 # Shortcomings
 
-+ Using sh might be an overkill for this task - it is too flexible. Maybe there is a way to circument creating a macro language, which won't need quite some unneeded code.
++ Using sh might be an overkill for this task - it is too flexible. Maybe there is a way to circument creating a macro language (which is also overkill, but from the other side - it will eat up time and might not cover all the features), which will also be simple to implement;
 + Creating an open repo with recipes can make a security problem in itself - there is no control over what content is in the package.
 
 I do not see any other major shortcomings.
