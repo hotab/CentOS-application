@@ -50,3 +50,8 @@ If anything is finished faster than in schedule - these features can get impleme
 
 I do not see any other major shortcomings.
 
+# Future
+
+I am not sure I can crunch these features into the schedule for GSoC, but, as I am willing to continue working on that after GSoC, I add them here:
+
++ external audit for recipes like ```firewall```, ```mysql``` (test root login externally) and others. The core should have a way to set variables to allow that without hardcoding anything.
