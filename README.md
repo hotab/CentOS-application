@@ -23,22 +23,28 @@ The core functionality would be - getting the repo info, getting/creating script
 As we will use python for the main tool too - we can use yum's code for the repo of recipes, and we can integrate with it to look up software (will need to be changed when it is ported to non-rpm based distros, which is rather possible with all the other tooling that was selected, but that won't be hard to do).
 
 I propose this schedule:
+# Schedule
 
 + Week 1 - Think through most of the functions the core module will need, think through all the metafile format and propose a set of common commands for scripts, propose a common format for the include script for ease of usage. (This will require a lot of communication with community, and thus I give a week for it, and it might continue throughout all summer, and even after that (I am thinking about supporting this project after GSoC as well). But 80% will be done in the beginning).
-+ Week 1 - 5. Code the functions for the core - repo communication, recipe creation, read software from yum, and so on. Examine yum's code to see whether there are parts to take from it. It is good and well-tested code, and that will simplify repo management - it can be a modification of some tool which is now in use. If that is not possible - I will also create this tool and create a repo format.
-+ Week 6 - 9 - Write some recipes, and ajust the core functions to match the actual needs of the recipes. Create recipe groups (roles)
++ Week 1 - 5. Code the functions for the core - repo communication, recipe creation, read software from yum, and so on. Examine yum's code to see whether there are parts to take from it. It is good and well-tested code, and that will simplify repo management as well - it can be a modification of some tool which is now in use (also included in the schedule). If that is not possible or is too hard - I will also create this tool and create a repo format.
++ Week 6 - 9 - Write some recipes, and ajust the core functions to match the actual needs of the recipes. (Roles are just recipes which only use and control other recipes. For example, mysql_role recipe can include firewall and mysql recipes)
 + Week 10 - 12 - Test everything through - create tests, verify them, and so on.
 
-If anything is finished faster than in schedule - these features will get implemented as well:
-+ If there are many kinds of the same software installed, give some generalised way to check which one is active right now (e.g. CentOS 7 has both iptables and firewalld after installation)
-+ Make a yum plugin for recipe installation.
-+ Explore ways to avoid using sh for commands (see shortcomings)
+Week 1 interlaps in the shedule, because I can create the formats for everything and exploring yum```'s code in parallel. I can also implement some obvious features that way.
+
+# Ways to do more if time allows
+
+If anything is finished faster than in schedule - these features can get implemented as well:
++ If there are many kinds of the same software installed, give some generalized way to check which one is active right now (e.g. CentOS 7 has both ```iptables``` and ```firewalld``` after installation)
++ Make a ```yum``` plugin for recipe installation.
++ Simplify role creation
++ Explore ways to avoid using sh for commands (see Shortcomings)
 + Code more recipes
 
 # Shortcomings
 
-+ Using sh might be an overkill for this task - it is too flexible. Maybe there is a way to circument that without creating a macro language.
-+ Using sh script and making an open repo with recipes can create a security problem in itself. 
++ Using sh might be an overkill for this task - it is too flexible. Maybe there is a way to circument creating a macro language, which won't need quite some unneeded code.
++ Creating an open repo with recipes can make a security problem in itself - there is no control over what content is in the package.
 
 I do not see any other major shortcomings.
 
