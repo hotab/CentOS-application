@@ -51,7 +51,7 @@ If anything is finished faster than in schedule - these features can get impleme
 
 # Shortcomings
 
-+ Using sh might be an overkill for this task - it is too flexible. Maybe there is a way to circument creating a macro language (which is also overkill, but from the other side - it will eat up time and might not cover all the features), which will also be simple to implement;
++ Using sh might be an overkill for this task - it is too flexible. Maybe there is a way to circument creating a macro language (which is also overkill, but from another point of view - it will eat up time and might not cover all the features), which will also be simple to implement;
 + Creating an open repo with recipes can make a security problem in itself - there is no control over what content is in the package.
 
 I do not see any other major shortcomings.
