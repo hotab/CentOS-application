@@ -2,7 +2,7 @@
 
 # Personal Details
 + Name: Vladislav Babkin
-+ University: Dnipropetrovsk National Univercity (DNU), Ukraine
++ University: Dnipropetrovsk National University (DNU), Ukraine
 + Degree Program: B. Sc. 
 + Course: Applied mathematics, System Analysis
 + Email: vladiksonic@mail.ru, vladiksonic@gmail.com
