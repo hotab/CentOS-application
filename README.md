@@ -2,7 +2,7 @@
 
 # Personal Details
 + Name: Vladislav Babkin
-+ University: Dnipropetrovsk National Univercity (DNU), Ukraine
++ University: Dnipropetrovsk National University (DNU), Ukraine
 + Degree Program: B. Sc. 
 + Course: Applied mathematics, System Analysis
 + Email: vladiksonic@mail.ru, vladiksonic@gmail.com
@@ -12,16 +12,16 @@
 # Availability and time
 
 + I plan to spend around 20-30 hours per week. Maybe more when possible (I will be working on a startup in parallel)
-+ I will have my exams in univercity in the beginning of June for 1 or 2 weeks - I won't be able to spend as much time in this period - thus I intend to start maybe before May 25 to compensate. I think that by August 24 most (95%+)  of the work will be complete.
++ I will have my exams in university in the beginning of June for 1 or 2 weeks - I won't be able to spend as much time in this period - thus I intend to start maybe before May 25 to compensate. I think that by August 24 most (95%+)  of the work will be complete.
 + I plan to support this project after GSoC, as well.
 
 # Project Description
 [Extendable system hardening tool](http://wiki.centos.org/GSoC/2015/Ideas#sys-hardening-tool)
 
-After analything how is it done now, I came to a conclusion that this should me a modular tool, wich will use python and sh scripts. I think so, because:
+After analysing how is it done now, I came to a conclusion that this should me a modular tool, wich will use python and sh scripts. I think so, because:
 
 + sh scripts, that are to be used here, are rather simple (say, opening a port for connections, closing it, locking root user login to mysql, and so on), up to being one-liners, thus it is easier to implement them directly, so that it is familiar for those, who will implement the best practices, and can be easily read by those only using it, in case they do.
-+ python is installed by default in CentOS, and thus, is available on every machine. It is slow, but for a one-off task like hardening security - it is perfect. It will give us ability to implement platform-independed tools to determine installed software, execute recipes, and so on - most of the work will be done here.
++ python is installed by default in CentOS, and thus, is available on every machine. It is slow, but for a one-off task like hardening security - it is perfect. It will give us ability to implement platform-independent tools to determine installed software, execute recipes, and so on - most of the work will be done here.
 
 In short: We will use sh commands to do the actual hardening, and we will use python scripts to execute needed commands. 
 
@@ -41,7 +41,7 @@ Core script (let's name it ```secctl```, but that is subject to change) would be
 + Fetch available scripts
 + Create scripts
 + Check software presence and activity
-+ and so on.
++ etc.
 + As we will use python for the main tool too - we can use yum's code for the repo of recipes, and we can integrate with it to look up software (will need to be changed when it is ported to non-rpm based distros, which is rather possible with all the other tooling that was selected, but that won't be hard to do).
 
 I propose this schedule:
@@ -52,7 +52,7 @@ I propose this schedule:
 + Week 6 - 9 - Write some recipes, and ajust the core functions to match the actual needs of the recipes.
 + Week 10 - 12 - Test everything through - create tests, verify them, and so on.
 
-Week 1 interlaps in the shedule, because I can create the formats for everything and exploring yum```'s code in parallel. I can also implement some obvious features that way.
+Week 1 interlaps in the shedule, because I can create the formats for everything and exploring yum's code in parallel. I can also implement some obvious features that way.
 
 ### Ways to do more if time allows
 
@@ -91,7 +91,7 @@ Also, I am a participant of ACM ICPC Contests. I participated in SEERC (semi-fin
 
 ### Interests
 
-I am generally interested in Cryptography, Infomation Security, Pentesting, and all connected to this field.
+I am generally interested in Cryptography, Infomation Security, Pentesting, and all connected with this field.
 Also, I am interested in back-end development in general. 
 
 That is why I decided to choose this project - it will allow me to develop skills in protecting systems up to a good level. And, more importantly - share this skill with other people. Currently, internet is rather insecure, and I am well aware of that. This project allows to fix it, at least a little bit. And that is why I think it is important.
@@ -99,7 +99,7 @@ That is why I decided to choose this project - it will allow me to develop skill
 ### Techinal skills
 (ordered by their importance for the project)
 + CentOS configuration - I have skills with configuring CentOS (6.5 and 7) for running a basic site and a database, but with hardened security (firewall, SSL for web-server, non-default ports for everything not connected with the public services, SELinux (on CentOS 7), and so on).
-+ Bash - I have basic bash skills, I can write basic scripts to do various administration tasks (like configure firewall, pull files from git, pull files from ftp and so on) - should be enough for this project.
++ Bash scripting - I have basic bash skills, I can write basic scripts to do various administration tasks (like configure firewall, pull files from git, pull files from ftp and so on) - should be enough for this project.
 + Python - I have some python skills (2.7.3) (Full understanding of syntax, understanding of functional programming, but no knowledge of special features and no experience in optimising the code in it), and I even wrote one Django site (unfortunately, closed), but I will learn it better for this project before summer - I wanted to do it anyway.
 + Cryptography - I have understanding of this subject, and I understand what to select for encryption/authentication. 
 + Pentesting - I have some skill in pentesting - learned it from CTFs and pentesting my own projects (Django site and current startup), but not much of a theoretical base - mostly read OWASP guides.
