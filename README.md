@@ -42,7 +42,7 @@ Core script (let's name it ```secctl```, but that is subject to change) would be
 + Create scripts
 + Check software presence and activity
 + etc.
-+ As we will use python for the main tool too - we can use yum's code for the repo of recipes, and we can integrate with it to look up software (will need to be changed when it is ported to non-rpm based distros, which is rather possible with all the other tooling that was selected, but that won't be hard to do).
++ As we will use python for the main tool too - we can use yum's code for the repo of recipes, and we can integrate with it to look up software (will need to be changed when it is ported to non-rpm based distros (which is rather possible with all the other tooling that was selected), but that won't be hard to do).
 
 I propose this schedule:
 ### Schedule
@@ -83,9 +83,9 @@ I am not sure I can crunch these features into the schedule for GSoC, but, as I 
 I am currently in my 3rd year of studying (out of 4) in DNU.
 
 Also, I took some courses on coursera, which might be relevant here:
-[Cryptography I](https://www.coursera.org/course/crypto) - 100% with Distinction
-[Computer Networks](https://www.coursera.org/course/comnetworks) - 95%
-[Malicious Software and its Underground Economy: Two Sides to Every Story](https://www.coursera.org/course/malsoftware) - 94.4%
++ [Cryptography I](https://www.coursera.org/course/crypto) - 100% with Distinction
++ [Computer Networks](https://www.coursera.org/course/comnetworks) - 95%
++ [Malicious Software and its Underground Economy: Two Sides to Every Story](https://www.coursera.org/course/malsoftware) - 94.4%
 
 Also, I am a participant of ACM ICPC Contests. I participated in SEERC (semi-finals) as part of the team DNU_Cifeidion for 2 times (2013, 2014).
 
