@@ -98,6 +98,7 @@ That is why I decided to choose this project - it will allow me to develop skill
 
 ### Techinal skills
 (ordered by their importance for the project)
++ CentOS configuration - I have skills with configuring CentOS (6.5 and 7) for running a basic site and a database, but with hardened security (firewall, SSL for web-server, non-default ports for everything not connected with the public services, SELinux (on CentOS 7), and so on).
 + Bash - I have basic bash skills, I can write basic scripts to do various administration tasks (like configure firewall, pull files from git, pull files from ftp and so on) - should be enough for this project.
 + Python - I have some python skills (2.7.3) (Full understanding of syntax, understanding of functional programming, but no knowledge of special features and no experience in optimising the code in it), and I even wrote one Django site (unfortunately, closed), but I will learn it better for this project before summer - I wanted to do it anyway.
 + Cryptography - I have understanding of this subject, and I understand what to select for encryption/authentication. 
