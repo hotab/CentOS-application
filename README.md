@@ -5,9 +5,9 @@
 + University: Dnipropetrovsk National Univercity (DNU), Ukraine
 + Degree Program: B. Sc. 
 + Course: Applied mathematics, System Analysis
-+ Email: vladiksonic@mail.ru
++ Email: vladiksonic@mail.ru, vladiksonic@gmail.com
 + Website: hotab1994.wordpress.com (Decided to start a blog rather recently, it is totally empty right now)
-+ LinkedIn: 
++ LinkedIn: [Hotab](https://ua.linkedin.com/in/hotab/en)
 
 # Availability and time
 
