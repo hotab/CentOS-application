@@ -35,7 +35,7 @@ _Note_: The repo manager will need a way to obsolete patches, for example: patch
 
 Core script would be able to:
 + Pull/obsolete/[any other meaningful operation] the patches
-+ (De)Activate the patches for the specific core, or for all the kernels - this is different from installation - installed patches are not used - only activated ones.
++ (De)Activate the patches for the specific core, or for all the kernels - this is different from installation - installed patches are not used - only activated ones are.
 + Refresh patch list.
 
 Yum plugin will be able to do exactly what is stated in the beginning of the proposal - no need to repeat it over.
