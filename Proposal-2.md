@@ -42,7 +42,7 @@ Yum plugin will be able to do exactly what is stated in the beginning of the pro
 
 ### Patch queues
 
-I have stated that we will have a patch queue - this will be a list of all the patches to be applied to the specific kernel on boot, in exact order of application. We need the exact ordening to make sure the patches are loaded the same way as when the user applies them one by one to avoid any quirks. Also, this would let us separate out the patches applied to different kernels, and allow the user to only use a patch for one specific version, for example.
+I have stated that we will have patch queues. A patch queue is a list of all the patches to be applied to the specific kernel on boot, in exact order of application. We need the exact ordening to make sure the patches are loaded the same way as when the user applies them one by one to avoid any quirks. Also, this would let us separate out the patches applied to different kernels, and allow the user to only use a patch for one specific version, for example.
 
 This file can be as simple as just a list of the patch id's in a file - users won't have way too many kernels installed anyway, and propably won't have too many patches activated to load - thus, it will be effective. It can be changed later, if needed, with ease and backwards compatibility.
 
@@ -68,7 +68,7 @@ If anything is finished faster than in schedule - these features can get impleme
 
 ### Shortcomings
 
-+ Using an own repo adds one more package manager to the system - maybe it is possible to integrate with yum, but that adds other shortcomings, like - having all the patches in one packages, or having a lot of packages for each patch, and that makes managing it harder. Maybe there is a workaround for it.
++ Using an own repo adds one more package manager to the system - maybe it is possible to integrate with yum, but that adds other shortcomings, like - having all the patches in one package, or having a lot of packages for each patch, and that makes managing it harder. Maybe there is a workaround for it.
 + Creating an open repo with patches can make a security problem - there is no control over what content is in the patch.
 
 I do not see any other major shortcomings.
@@ -99,7 +99,7 @@ As I have stated in the mailing list - this is the project which took the second
 
 ### Techinal skills
 (ordered by their importance for the project)
-+ CentOS configuration (and other distros in general) - I have skills with configuring CentOS (6.5 and 7) (and other distros in general) for running with hardened security (firewall, SSL for web-server, non-default ports for everything not connected with the public services, SELinux, and so on).
++ CentOS configuration (and other distros in general) - I have skills with configuring CentOS (6.5 and 7) (and other distros in general).
 + Git - I can use it well, including branching, merging branches, forking and so on, but I never made pull requests (excluding the case with multer.js) (I will be writing repo here, and having a skill with an existing repo is important, even if this repo is very different)
 + Bash scripting - I have basic bash skills, I can write basic scripts to do various administration tasks (like configure firewall, pull files from git, pull files from ftp and so on) - should be enough for this project.
 + Python - I have some python skills (2.7.3) (Full understanding of syntax, understanding of functional programming, but no knowledge of special features and no experience in optimising the code in it), and I even wrote one Django site (unfortunately, closed), but I will learn it better for this project before summer - I wanted to do it anyway.
@@ -114,6 +114,7 @@ Not very relevant skills, but I will list them:
 + Pentesting - I have some skill in pentesting - learned it from CTFs and pentesting my own projects (Django site and current startup), but not much of a theoretical base - mostly read OWASP guides.
 
 PS. I have no open-source experience right now (apart from C# project I mentioned earlier). For me - this project is an entry point. 
+PS 2. I have no actual experience with patching the kernel - but I will get that in the middle of the project, and I will experiment with it before summer to not start from 0.
 
 ### Development environment
 + I currently use Webstorm and Sublime Text 2 on Mac OS X, Linux and Windows.
